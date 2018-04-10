@@ -1,0 +1,12 @@
+<!--pages/result/result.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <text class="page__title">RESULT</text>
+  </view>
+  <view class="page__bd">
+    <view class="section__ctn">
+      <image style="width: 300px; height: 250px; background-color: #eeeeee;" mode="{{mode}}" src="{{src}}"></image>
+    </view>
+    <text class="result">{{result}}</text>
+  </view>
+</view>

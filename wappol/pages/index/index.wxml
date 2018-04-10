@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> Login </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="container">
+    <view class="btn_this">
+      <text class="btn_this"> {{res}} </text>
+    </view>
+  </view>
+  <button type="primary" bindtap="btn_primary" hover-class="other-button-hover">{{btn_name}} </button> 
+</view>
+
+<!-- <view class="big-logos">  
+ <image bindtap="upimg" src='../../images/jia.png'></image>  
+  <block wx:for="{{img_arr}}">  
+   <view class='logoinfo'>  
+     <image src='{{item}}'></image>  0
+   </view>  
+ </block>  
+</view>   -->
