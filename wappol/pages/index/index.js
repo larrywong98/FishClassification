@@ -67,7 +67,7 @@ Page({
           title: 'Loading',
         })
         wx.uploadFile({
-          url: 'http://202.121.66.147:8000/Webserver/tmp/',
+          url: 'ip_address',
           filePath: tempFilePaths[0],
           method: 'POST',
           name: "picture",
